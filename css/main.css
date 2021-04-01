@@ -17,8 +17,8 @@ body {
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/Restaurant-Instagram-Photography.png);
-  background-size: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../images/bigstock-Couple-eating-romantic-Dinner-211393663.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   /* .navbar {
     &-items {
@@ -40,28 +40,43 @@ body {
   */
 }
 
+.header .logo {
+  font-size: 1.3rem;
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 0.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
 .header .overlay {
   height: 100%;
   width: 0;
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   transition: 1s;
 }
 
-.header span {
+.header .open-nav {
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
 }
 
 .header .overlay-content {
   position: relative;
-  top: 25%;
+  top: 8%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -104,5 +119,58 @@ body {
     top: 15px;
     right: 35px;
   }
+}
+
+.header .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .content-main {
+  text-align: center;
+  color: #fff;
+  margin: 6rem auto 0rem auto;
+  padding: 0 0 2rem 0;
+  font-size: 1.5rem;
+}
+
+.header .content-sub {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto 3rem auto;
+  color: #fff;
+}
+
+.header .search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header .search-box input {
+  width: 12rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+
+.header .search-box ::placeholder {
+  font-size: 0.75rem;
+  padding-left: 1rem;
+  color: #72b80a;
+}
+
+.header .search-box .fas {
+  position: relative;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: #72b80a;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

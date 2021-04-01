@@ -10,10 +10,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="./css/all.css" rel="stylesheet">
+
     <title>Document</title>
   </head>
   <body>
     <header class="header">
+      <div class="logo">
+        <i class="fas fa-utensils"></i>
+    </div>
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -24,13 +29,22 @@
         <hr>
           <a  class="button" href="#">Sign In</a>
           <a  class="button" href="#">Sign up</a>
-
-
         </div>
-      </div>
+      </div>     
+      <span class="open-nav"  onclick="openNav()">&#9776</span>
+      <div class="content">
+        <h3 class="content-main">
+          Find Your Best Real Estate
+        </h3>
+        <span class="content-sub">
+          You can also add your own custom styling to Font Awesome icons by adding your own CSS rules in your project’s code. 
+        </span>
+        <div class="search-box">
+          <input type="search" placeholder="search...">
+          <i class="fas fa-search"></i>
+        </div>
       
-     
-      <span  onclick="openNav()">&#9776</span>
+      </div>
       
       <script>
       function openNav() {
