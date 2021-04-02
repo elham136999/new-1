@@ -20,24 +20,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../images/bigstock-Couple-eating-romantic-Dinner-211393663.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* .navbar {
-    &-items {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      .link {
-        text-decoration: none;
-        list-style: none;
-        color: $color-white;
-      }
-      ul li {
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 0.5rem;
-      }
-    }
-  }
-  */
 }
 
 .header .logo {
@@ -203,7 +185,75 @@ body {
 }
 
 .section .companies-logo .image {
-  width: 80%;
+  width: 15rem;
   padding: 2rem;
+}
+
+.section .our-service {
+  width: 100%;
+  text-align: center;
+}
+
+.section .our-service--heading {
+  font-size: 2rem;
+  color: #706d6d;
+  letter-spacing: 0.3rem;
+  padding: 1rem;
+}
+
+.section .our-service--sub {
+  font-size: 1rem;
+  color: #706d6d;
+}
+
+.section .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.section .cards .card {
+  width: 10rem;
+  height: 15rem;
+  text-align: center;
+  border: 1px solid #706d6d;
+  margin: 0.5rem;
+  border: none;
+  box-shadow: 0.1rem 0.1rem 0.5rem #c5c4c4;
+  border-radius: 10px;
+}
+
+.section .cards .card .fa-home {
+  color: #72b80a;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.section .cards .card .fa-asymmetrik {
+  color: #fafa14;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.section .cards .card .fa-basketball-ball {
+  color: purple;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.section .cards .card-main {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.section .cards .card-sub {
+  font-size: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #706d6d;
 }
 /*# sourceMappingURL=main.css.map */
