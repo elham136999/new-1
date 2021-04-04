@@ -16,10 +16,23 @@ body {
 
 .header {
   width: 100%;
-  height: 100vh;
+  height: 64vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../images/bigstock-Couple-eating-romantic-Dinner-211393663.jpg);
-  background-size: cover;
+  background-size: 25rem;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 425px) {
+  .header {
+    background-size: 27rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-size: 100%;
+    height: 32rem;
+  }
 }
 
 .header .logo {
@@ -32,6 +45,12 @@ body {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .header .logo {
+    font-size: 2rem;
+  }
 }
 
 .header .overlay {
@@ -111,19 +130,56 @@ body {
   align-items: center;
 }
 
+@media (min-width: 425px) {
+  .header .content {
+    padding: 0rem 1rem 0 1rem;
+  }
+}
+
 .header .content-main {
   text-align: center;
   color: #fff;
-  margin: 8rem auto 0rem auto;
-  padding: 0 0 2rem 0;
+  margin: 5rem auto 0rem auto;
+  padding: 0 0 1rem 0;
   font-size: 1.4rem;
+}
+
+@media (min-width: 425px) {
+  .header .content-main {
+    padding: 0 0 1.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .content-main {
+    font-size: 2rem;
+    margin: 6rem 0 1.8rem 0;
+  }
 }
 
 .header .content-sub {
   text-align: center;
   font-size: 1rem;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 1.5rem auto;
   color: #fff;
+}
+
+@media (min-width: 425px) {
+  .header .content-sub {
+    margin: 0 auto 2rem auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .content-sub {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .content-sub {
+    margin: 0 0 4rem 0;
+  }
 }
 
 .header .search-box {
@@ -141,6 +197,20 @@ body {
   border-radius: 40px;
 }
 
+@media (min-width: 425px) {
+  .header .search-box input {
+    width: 14rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .search-box input {
+    width: 18rem;
+    height: 2.8rem;
+  }
+}
+
 .header .search-box ::placeholder {
   font-size: 0.75rem;
   padding-left: 1rem;
@@ -153,6 +223,12 @@ body {
   font-size: 1.5rem;
   color: #72b80a;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header .search-box .fas {
+    font-size: 1.6rem;
+  }
 }
 
 .section {
@@ -169,10 +245,17 @@ body {
 .section .companies-text {
   display: inline-block;
   text-align: center;
-  color: #72b80a;
+  color: #706d6d;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section .companies-text {
+    margin-top: 12rem;
+    font-size: 1.8rem;
+  }
 }
 
 .section .companies-logo {
@@ -182,11 +265,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section .companies-logo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
 }
 
 .section .companies-logo .image {
-  width: 15rem;
-  padding: 2rem;
+  width: 10rem;
+  margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section hr {
+    display: none;
+  }
 }
 
 .section .our-service {
@@ -201,9 +299,22 @@ body {
   padding: 1rem;
 }
 
+@media (min-width: 768px) {
+  .section .our-service--heading {
+    font-size: 2.2rem;
+    margin: 2rem 0 0 0;
+  }
+}
+
 .section .our-service--sub {
   font-size: 1rem;
   color: #706d6d;
+}
+
+@media (min-width: 768px) {
+  .section .our-service--sub {
+    font-size: 1.5rem;
+  }
 }
 
 .section .cards {
@@ -215,8 +326,14 @@ body {
   margin-top: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  .section .cards {
+    flex-direction: row;
+  }
+}
+
 .section .cards .card {
-  width: 10rem;
+  width: 14rem;
   height: 15rem;
   text-align: center;
   border: 1px solid #706d6d;
@@ -226,28 +343,53 @@ body {
   border-radius: 10px;
 }
 
+@media (min-width: 425px) {
+  .section .cards .card {
+    width: 15rem;
+    height: 16.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section .cards .card {
+    width: 14.5rem;
+  }
+}
+
 .section .cards .card .fa-home {
   color: #72b80a;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 1.5rem;
 }
 
 .section .cards .card .fa-asymmetrik {
   color: #fafa14;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 1.5rem;
 }
 
 .section .cards .card .fa-basketball-ball {
   color: purple;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 1.5rem;
 }
 
 .section .cards .card-main {
-  padding: 1rem;
+  padding: 1.2rem;
   font-size: 1rem;
   font-weight: bolder;
+}
+
+@media (min-width: 425px) {
+  .section .cards .card-main {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section .cards .card-main {
+    font-size: 1.2rem;
+  }
 }
 
 .section .cards .card-sub {
@@ -255,5 +397,11 @@ body {
   font-size: 1rem;
   padding: 0.5rem;
   color: #706d6d;
+}
+
+@media (min-width: 425px) {
+  .section .cards .card-sub {
+    font-size: 1.1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
