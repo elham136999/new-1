@@ -165,11 +165,11 @@ body {
 }
 
 .header .content {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 @media (min-width: 425px) {
@@ -243,9 +243,10 @@ body {
 
 .header .search-box {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 @media (min-width: 425px) {
@@ -318,13 +319,13 @@ body {
 
 .section {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .section .companies {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -352,12 +353,12 @@ body {
 }
 
 .section .companies-logo {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: auto;
   margin-top: 2rem;
 }
 
@@ -389,6 +390,7 @@ body {
 .section .our-service {
   width: 100%;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .section .our-service--heading {
@@ -415,7 +417,6 @@ body {
 .section .our-service--sub {
   font-size: 1rem;
   color: #706d6d;
-  display: inline-block;
 }
 
 @media (min-width: 768px) {
@@ -428,17 +429,18 @@ body {
   .section .our-service--sub {
     font-size: 1.8rem;
     padding: 2rem;
-    margin-bottom: 2rem;
+    display: inline-block;
+    margin-bottom: 5rem;
   }
 }
 
 .section .cards {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.5rem;
+  width: 100%;
+  margin-top: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -456,6 +458,13 @@ body {
   border: none;
   box-shadow: 0.1rem 0.1rem 0.5rem #c5c4c4;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section .cards .card:hover {
+  transform: scale(1.2);
+  background-color: #72b80a;
+  color: #fff;
 }
 
 @media (min-width: 425px) {
@@ -479,7 +488,7 @@ body {
 }
 
 .section .cards .card .fa-home {
-  color: #72b80a;
+  color: orangered;
   font-size: 3rem;
   padding: 1.5rem;
 }
