@@ -1,5 +1,6 @@
 .section {
   width: 100%;
+  height: 100%;
   .companies {
     display: flex;
     flex-direction: column;
@@ -12,10 +13,14 @@
       color: $color-gray;
       font-weight: bold;
       font-size: 1.3rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
       @media (min-width: 768px) {
-        margin-top: 12rem;
+        margin-top: 3rem;
         font-size: 1.8rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -36,6 +41,9 @@
       .image {
         width: 10rem;
         margin: 2rem;
+        @media (min-width: 1024px) {
+          width: 12rem;
+        }
       }
     }
   }
@@ -57,12 +65,22 @@
         font-size: 2.2rem;
         margin: 2rem 0 0 0;
       }
+      @media (min-width: 1024px) {
+        font-size: 3rem;
+        margin: 10rem 0 0 0;
+      }
     }
     &--sub {
       font-size: 1rem;
       color: $color-gray;
+      display: inline-block;
       @media (min-width: 768px) {
         font-size: 1.5rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 1.8rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -93,21 +111,34 @@
       @media (min-width: 768px) {
         width: 14.5rem;
       }
+      @media (min-width: 1024px) {
+        width: 20rem;
+        height: 20rem;
+      }
 
       .fa-home {
         color: $color-green;
         font-size: 3rem;
         padding: 1.5rem;
+        @media (min-width: 1024px) {
+          font-size: 4rem;
+        }
       }
       .fa-asymmetrik {
         color: $color-yellow;
         font-size: 3rem;
         padding: 1.5rem;
+        @media (min-width: 1024px) {
+          font-size: 4rem;
+        }
       }
       .fa-basketball-ball {
         color: $color-purple;
         font-size: 3rem;
         padding: 1.5rem;
+        @media (min-width: 1024px) {
+          font-size: 4rem;
+        }
       }
       &-main {
         padding: 1.2rem;
@@ -119,14 +150,21 @@
         @media (min-width: 768px) {
           font-size: 1.2rem;
         }
+        @media (min-width: 1024px) {
+          font-size: 1.7rem;
+          padding: 2rem;
+        }
       }
       &-sub {
         font-size: 1rem;
-        font-size: 1rem;
+
         padding: 0.5rem;
         color: $color-gray;
         @media (min-width: 425px) {
           font-size: 1.1rem;
+        }
+        @media (min-width: 1024px) {
+          font-size: 1.3rem;
         }
       }
     }

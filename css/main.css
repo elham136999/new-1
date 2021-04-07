@@ -14,32 +14,55 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   width: 100%;
-  height: 64vh;
+  height: 13rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../images/bigstock-Couple-eating-romantic-Dinner-211393663.jpg);
-  background-size: 25rem;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 425px) {
   .header {
-    background-size: 27rem;
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
   }
 }
 
 @media (min-width: 768px) {
   .header {
-    background-size: 100%;
+    background-size: cover;
+    width: 100%;
     height: 32rem;
   }
 }
 
+@media (min-width: 1024px) {
+  .header {
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    width: 100%;
+    height: 70rem;
+    background-size: cover;
+  }
+}
+
 .header .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   border: 1px solid #fff;
-  display: inline-block;
   padding: 0.5rem;
   border-radius: 50%;
   position: absolute;
@@ -50,6 +73,16 @@ body {
 @media (min-width: 768px) {
   .header .logo {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo {
+    font-size: 3rem;
+    padding: 0.7rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
   }
 }
 
@@ -67,12 +100,21 @@ body {
 }
 
 .header .open-nav {
-  font-size: 2rem;
+  font-size: 1.7rem;
   cursor: pointer;
   color: white;
   position: absolute;
   right: 1rem;
   top: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .header .open-nav {
+    font-size: 3rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
 }
 
 .header .overlay-content {
@@ -139,13 +181,15 @@ body {
 .header .content-main {
   text-align: center;
   color: #fff;
-  margin: 5rem auto 0rem auto;
+  margin: 3.5rem auto 0rem auto;
   padding: 0 0 1rem 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 425px) {
   .header .content-main {
+    font-size: 1.5rem;
+    margin-top: 5rem;
     padding: 0 0 1.5rem 0;
   }
 }
@@ -157,16 +201,24 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header .content-main {
+    font-size: 3rem;
+    margin: 11rem 0 2rem 0;
+  }
+}
+
 .header .content-sub {
   text-align: center;
-  font-size: 1rem;
-  margin: 0 auto 1.5rem auto;
+  font-size: 0.95rem;
+  margin: 0 0 1.2rem 0;
   color: #fff;
 }
 
 @media (min-width: 425px) {
   .header .content-sub {
-    margin: 0 auto 2rem auto;
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem 0;
   }
 }
 
@@ -182,11 +234,24 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header .content-sub {
+    font-size: 2rem;
+    margin: 1rem 0 2rem 0;
+  }
+}
+
 .header .search-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 425px) {
+  .header .search-box {
+    margin-top: 3.5rem;
+  }
 }
 
 .header .search-box input {
@@ -211,10 +276,23 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header .search-box input {
+    width: 25rem;
+    height: 4rem;
+  }
+}
+
 .header .search-box ::placeholder {
   font-size: 0.75rem;
   padding-left: 1rem;
   color: #72b80a;
+}
+
+@media (min-width: 1024px) {
+  .header .search-box ::placeholder {
+    font-size: 1.2rem;
+  }
 }
 
 .header .search-box .fas {
@@ -231,8 +309,16 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header .search-box .fas {
+    font-size: 2rem;
+    right: 3rem;
+  }
+}
+
 .section {
   width: 100%;
+  height: 100%;
 }
 
 .section .companies {
@@ -248,13 +334,20 @@ body {
   color: #706d6d;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
   .section .companies-text {
-    margin-top: 12rem;
+    margin-top: 3rem;
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section .companies-text {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -279,6 +372,12 @@ body {
 .section .companies-logo .image {
   width: 10rem;
   margin: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .section .companies-logo .image {
+    width: 12rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -306,14 +405,30 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .section .our-service--heading {
+    font-size: 3rem;
+    margin: 10rem 0 0 0;
+  }
+}
+
 .section .our-service--sub {
   font-size: 1rem;
   color: #706d6d;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .section .our-service--sub {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section .our-service--sub {
+    font-size: 1.8rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -356,10 +471,23 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .section .cards .card {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 .section .cards .card .fa-home {
   color: #72b80a;
   font-size: 3rem;
   padding: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section .cards .card .fa-home {
+    font-size: 4rem;
+  }
 }
 
 .section .cards .card .fa-asymmetrik {
@@ -368,10 +496,22 @@ body {
   padding: 1.5rem;
 }
 
+@media (min-width: 1024px) {
+  .section .cards .card .fa-asymmetrik {
+    font-size: 4rem;
+  }
+}
+
 .section .cards .card .fa-basketball-ball {
   color: purple;
   font-size: 3rem;
   padding: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section .cards .card .fa-basketball-ball {
+    font-size: 4rem;
+  }
 }
 
 .section .cards .card-main {
@@ -392,8 +532,14 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .section .cards .card-main {
+    font-size: 1.7rem;
+    padding: 2rem;
+  }
+}
+
 .section .cards .card-sub {
-  font-size: 1rem;
   font-size: 1rem;
   padding: 0.5rem;
   color: #706d6d;
@@ -402,6 +548,12 @@ body {
 @media (min-width: 425px) {
   .section .cards .card-sub {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section .cards .card-sub {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
