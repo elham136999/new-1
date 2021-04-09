@@ -261,6 +261,7 @@ body {
   border: none;
   outline: none;
   border-radius: 40px;
+  padding-left: 3rem;
 }
 
 @media (min-width: 425px) {
@@ -329,6 +330,20 @@ body {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .section .companies {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section .companies {
+    width: 100%;
+    height: 50%;
+  }
+}
+
 .section .companies-text {
   display: inline-block;
   text-align: center;
@@ -381,10 +396,14 @@ body {
   }
 }
 
+.section hr {
+  display: none;
+}
+
 .section .our-service {
   width: 100%;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .section .our-service--heading {
@@ -404,7 +423,7 @@ body {
 @media (min-width: 1024px) {
   .section .our-service--heading {
     font-size: 3rem;
-    margin: 10rem 0 0 0;
+    margin: 6rem 0 0 0;
   }
 }
 
@@ -434,7 +453,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 8rem;
+  margin: 1rem 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 @media (min-width: 768px) {
@@ -446,6 +466,7 @@ body {
 .section .cards .card {
   width: 14rem;
   height: 15rem;
+  background-color: #d7fc9d;
   text-align: center;
   border: 1px solid #706d6d;
   margin: 0.5rem;
@@ -456,7 +477,7 @@ body {
 }
 
 .section .cards .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.09);
   background-color: #72b80a;
   color: #fff;
 }

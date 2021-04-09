@@ -3,7 +3,14 @@
   height: auto;
   .companies {
     @include flex-box;
-
+    @media (min-width: 768px) {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @media (min-width: 1024px) {
+      width: 100%;
+      height: 50%;
+    }
     &-text {
       display: inline-block;
       text-align: center;
@@ -42,11 +49,13 @@
       }
     }
   }
-
+  hr {
+    display: none;
+  }
   .our-service {
     width: 100%;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     &--heading {
       font-size: 2rem;
       color: $color-gray;
@@ -58,7 +67,7 @@
       }
       @media (min-width: 1024px) {
         font-size: 3rem;
-        margin: 10rem 0 0 0;
+        margin: 6rem 0 0 0;
       }
     }
     &--sub {
@@ -79,7 +88,8 @@
   .cards {
     @include flex-box;
     width: 100%;
-    margin-top: 8rem;
+    margin: 1rem 2rem 0 2rem;
+    padding: 0 2rem 0 2rem;
     @media (min-width: 768px) {
       flex-direction: row;
     }
@@ -87,6 +97,7 @@
     .card {
       width: 14rem;
       height: 15rem;
+      background-color: rgb(215, 252, 157);
       text-align: center;
       border: 1px solid $color-gray;
       margin: 0.5rem;
@@ -95,7 +106,7 @@
       border-radius: 10px;
       transition: 0.5s;
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.09);
         background-color: $color-green;
         color: $color-white;
       }
